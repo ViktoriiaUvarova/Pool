@@ -1,16 +1,17 @@
-﻿namespace Pool.Models
+﻿using System;
+
+namespace Pool.Models
 {
-    public class Sportsman
+    public class Sportsman:Entity
     {
-        public string ID_Sportsmen;
-        public string name { get; set; }
-        public int years { get; set; }
-        public string phone { get; set; }
-        public string category { get; set; }
+        public string Name { get; set; }
+        public DateTime Birthday { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Rank { get; set; }
 
         public override string ToString()
         {
-            return $"{name}, {years}, {phone}, {category}";
+            return $"{Name}, {Birthday}, {PhoneNumber}, {Rank}";
         }
     }
 }

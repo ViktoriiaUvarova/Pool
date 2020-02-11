@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Pool
 {
-    public class Program
+    public class Program:IProgram
     {
         public static void Main(string[] args)
         {
             Console.Read();
         }
+    }
+
+    public interface IProgram
+    {
+
     }
 }

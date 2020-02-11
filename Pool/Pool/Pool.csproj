@@ -41,9 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="Models\Entity.cs" />
+    <Compile Include="Models\IEntity.cs" />
     <Compile Include="Models\Subscription.cs" />
-    <Compile Include="Models\Pool.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Models\SwimPool.cs" />
     <Compile Include="Models\Sportsman.cs" />
     <Compile Include="Models\Coach.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
