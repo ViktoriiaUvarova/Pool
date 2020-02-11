@@ -14,6 +14,7 @@ namespace Pool.Models
 
     public interface IEntity
     {
-
+        long ID { get; set; }
+        DateTime ModifiedAt { get; set; }
     }        
 }

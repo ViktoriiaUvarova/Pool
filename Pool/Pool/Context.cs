@@ -7,30 +7,20 @@ using Pool.Models;
 
 namespace Context
 {
-    public class Context:IContext
+    public class Context
     {
+        public List<Sportsman> Sportsmen = new List<Sportsman>();
+        public List<Coach> Coachs = new List<Coach>();
+        public List<SwimPool> Pools = new List<SwimPool>();
 
-        List<Sportsman> sportsmens = new List<Sportsman>()
-        {
-            new Sportsman() {name = "Viktoriia Uvarova", phonenumber = "380665883835", yearsold = 18, rank = "Internationat Master of Sport"},
-            new Sportsman() {name = "Ivan Ivarov", phonenumber = "380965993634", yearsold = 12, rank = "I"}
-        };
+        public Context() {
 
-        List<Coach> coachs = new List<Coach>()
-        {
-            new Coach() {name = "Krasnogor Tetyana", phonenumber = "380232323553", yearsold = 31, rank = "Honored Master of Sport"},
-            new Coach() {name = "Petr Petrov", phonenumber = "38669664836", yearsold = 45, rank = "Master of Sport"}
-        };
-
-        List<POOL> pools = new List<POOL>()
-        {
-            new POOL() {namepool = "Akvarena", yearsopen = 1970, length = 50, location = "Klochkivska street 43/47" },
-            new POOL() {namepool = "Kharkiv", yearsopen = 1950, length = 25, location = "Nemishlyanska"}
-        };
-    }
-
-    public interface IContext
-    {
-
+            Sportsmen.Add(new Sportsman() { Name = "Viktoriia Uvarova", PhoneNumber = "380665883835", Rank = "Internationat Master of Sport" });
+            Sportsmen.Add(new Sportsman() { Name = "Ivan Ivarov", PhoneNumber = "380965993634", Rank = "I" });
+            Coachs.Add(new Coach() { Name = "Krasnogor Tetyana", PhoneNumber = "380232323553", Rank = "Honored Master of Sport" });
+            Coachs.Add(new Coach() { Name = "Petr Petrov", PhoneNumber = "38669664836", Rank = "Master of Sport" });
+            Pools.Add(new SwimPool() { NamePool = "Akvarena", Length = 50, Location = "Klochkivska street 43/47" });
+            Pools.Add(new SwimPool() { NamePool = "Kharkiv", Length = 25, Location = "Nemishlyanska" });
+         }
     }
 }
