@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Pool.Models
 {
-    public abstract class Entity:IEntity
+    public interface IEntity
     {
-        public long ID { get; set; }
-        public DateTime ModifiedAt { get; set; }
-    }      
+        long ID { get; set; }
+        DateTime ModifiedAt { get; set; }
+    }
 }

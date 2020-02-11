@@ -12,6 +12,7 @@ namespace Context
         public List<Sportsman> Sportsmen = new List<Sportsman>();
         public List<Coach> Coachs = new List<Coach>();
         public List<SwimPool> Pools = new List<SwimPool>();
+        public List<Subscription> Subscriptions = new List<Subscription>();
 
         public Context() {
 
@@ -21,6 +22,8 @@ namespace Context
             Coachs.Add(new Coach() { Name = "Petr Petrov", PhoneNumber = "38669664836", Rank = "Master of Sport" });
             Pools.Add(new SwimPool() { NamePool = "Akvarena", Length = 50, Location = "Klochkivska street 43/47" });
             Pools.Add(new SwimPool() { NamePool = "Kharkiv", Length = 25, Location = "Nemishlyanska" });
-         }
+            Subscriptions.Add(new Subscription() { PoolID = "01", SportsmanID = "01", CoachID = "01"});
+            Subscriptions.Add(new Subscription() { PoolID = "02", SportsmanID = "02", CoachID = "02" });
+        }
     }
 }
