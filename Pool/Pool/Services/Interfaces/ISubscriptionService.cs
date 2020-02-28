@@ -9,11 +9,11 @@ namespace Pool.Services
 {
     public interface ISubscriptionService
     {
-        void InsertSubscription(string sportsmanID, string coachID, string poolID, DateTime? clearanceDate, DateTime? term);
+        void InsertSubscription(string sportsmanID, long coachID, string poolID, DateTime? clearanceDate, DateTime? term);
         void InsertSubscription(Subscription item);
-        void InsertSubscription(DateTime? clearanceDate, DateTime? term);
+        void InsertSubscription(string sportsmanID, string poolID, DateTime? clearanceDate, DateTime? term);
 
-        Subscription UpdateSubscription(long id, string sportsmanID, string coachID, string poolID, DateTime? clearanceDate, DateTime? term);
+        Subscription UpdateSubscription(long id, string sportsmanID, long coachID, string poolID, DateTime? clearanceDate, DateTime? term);
         Subscription UpdateSubscription(Subscription item);
         Subscription UpdateSubscription(long id, DateTime? clearanceDate, DateTime? term);
 

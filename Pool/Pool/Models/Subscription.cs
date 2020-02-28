@@ -10,7 +10,7 @@ namespace Pool.Models
     {
         public string PoolID;
         public string SportsmanID;
-        public string CoachID;
+        public long CoachID;
         public DateTime? ClearanceDate;
         public DateTime? Term;
 

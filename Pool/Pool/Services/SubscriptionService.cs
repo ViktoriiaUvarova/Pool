@@ -36,7 +36,7 @@ namespace Pool.Services
             return result;
         }
 
-        public void InsertSubscription(string sportsmanID, string coachID, string poolID, DateTime? clearanceDate, DateTime? term)
+        public void InsertSubscription(string sportsmanID, long coachID, string poolID, DateTime? clearanceDate, DateTime? term)
         {
             var item = new Subscription()
             {
@@ -55,12 +55,12 @@ namespace Pool.Services
             poolContext.Subscriptions.Add(item);
         }
 
-        public void InsertSubscription(DateTime? clearanceDate, DateTime? term)
+        public void InsertSubscription(string sportsmanID, string poolID, DateTime? clearanceDate, DateTime? term)
         {
-            InsertSubscription(null, null, null, clearanceDate, term);
+            InsertSubscription(sportsmanID, poolID, clearanceDate, term);
         }
 
-        public Subscription UpdateSubscription(long id, string sportsmanID, string coachID, string poolID, DateTime? clearanceDate, DateTime? term)
+        public Subscription UpdateSubscription(long id, string sportsmanID, long coachID, string poolID, DateTime? clearanceDate, DateTime? term)
         {
             var item = GetSubscription(id);
 
