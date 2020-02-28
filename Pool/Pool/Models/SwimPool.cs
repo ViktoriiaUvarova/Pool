@@ -9,7 +9,7 @@ namespace Pool.Models
     public class SwimPool:Entity
     {
         public string NamePool { get; set; }
-        public DateTime YearsOpen { get; set; }
+        public DateTime? YearsOpen { get; set; }
         public int Length { get; set; }
         public string Location { get; set; }
 
