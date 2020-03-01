@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Pool.Models;
 using Pool;
 
-namespace Pool.Services
+/*namespace Pool.Services
 {
     public class СoachService : ICoachService
     {
@@ -90,3 +90,4 @@ namespace Pool.Services
     }
 
 }
+*/

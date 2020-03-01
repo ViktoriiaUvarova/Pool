@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Pool.Models;
 
-namespace Pool.Services
+/*namespace Pool.Services
 {
     public class SwimPoolService : ISwimPoolService
     {
@@ -88,3 +88,4 @@ namespace Pool.Services
         }
     }
 }
+*/

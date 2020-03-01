@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Pool.Models;
 
-namespace Pool.Services
+/*namespace Pool.Services
 {
     public class SubscriptionService : ISubscriptionService
     {
@@ -90,3 +90,4 @@ namespace Pool.Services
         }
     }
 }
+*/

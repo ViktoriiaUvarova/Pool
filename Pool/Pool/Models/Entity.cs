@@ -12,3 +12,4 @@ namespace Pool.Models
         public DateTime ModifiedAt { get; set; }
     }      
 }
+

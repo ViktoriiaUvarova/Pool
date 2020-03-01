@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,23 +8,16 @@ using Pool.Models;
 
 namespace Pool
 {
-    public class PoolContext
+    public class PoolContext:DbContext
     {
-        public List<Sportsman> Sportsmen = new List<Sportsman>();
-        public List<Coach> Coaches = new List<Coach>();
-        public List<SwimPool> Pools = new List<SwimPool>();
-        public List<Subscription> Subscriptions = new List<Subscription>();
+        public DbSet<Sportsman> Sportsmen;
+        public DbSet<Coach> Coaches;
+        public DbSet<SwimPool> Pools;
+        public DbSet<Subscription> Subscriptions;
 
-        public PoolContext() {
-
-            Sportsmen.Add(new Sportsman() { Name = "Viktoriia Uvarova", PhoneNumber = "380665883835", Rank = "Internationat Master of Sport" });
-            Sportsmen.Add(new Sportsman() { Name = "Ivan Ivarov", PhoneNumber = "380965993634", Rank = "I" });
-            Coaches.Add(new Coach() { Name = "Krasnogor Tetyana", PhoneNumber = "380232323553", Rank = "Honored Master of Sport" });
-            Coaches.Add(new Coach() { Name = "Petr Petrov", PhoneNumber = "38669664836", Rank = "Master of Sport" });
-            Pools.Add(new SwimPool() { NamePool = "Akvarena", Length = 50, Location = "Klochkivska street 43/47" });
-            Pools.Add(new SwimPool() { NamePool = "Kharkiv", Length = 25, Location = "Nemishlyanska" });
-            Subscriptions.Add(new Subscription() { PoolID = "01", SportsmanID = "01", CoachID = "01"});
-            Subscriptions.Add(new Subscription() { PoolID = "02", SportsmanID = "02", CoachID = "02" });
+        public PoolContext():base("ConnectionString")
+        {
+            
         }
     }
 }

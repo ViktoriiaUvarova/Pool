@@ -4,3 +4,9 @@ C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\bin\Debug\Pool.dll
 C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\bin\Debug\Pool.pdb
 C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\obj\Debug\Pool.dll
 C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\obj\Debug\Pool.pdb
+C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\bin\Debug\Pool.dll.config
+C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\bin\Debug\EntityFramework.dll
+C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\bin\Debug\EntityFramework.xml
+C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vikukha\Desktop\NURE\Pool\Pool\Pool\obj\Debug\Pool.csproj.CopyComplete

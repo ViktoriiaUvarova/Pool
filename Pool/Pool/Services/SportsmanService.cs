@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Pool.Models;
 
-namespace Pool.Services
+ /*namespace Pool.Services
 {
     public class SportsmanService : ISportsmanService
     {
@@ -89,3 +89,4 @@ namespace Pool.Services
         }
     }
 }
+*/
