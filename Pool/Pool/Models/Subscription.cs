@@ -8,15 +8,21 @@ namespace Pool.Models
 {
     public class Subscription:Entity
     {
-        public string PoolID;
-        public string SportsmanID;
-        public long CoachID;
-        public DateTime? ClearanceDate;
-        public DateTime? Term;
+        public DateTime ClearanceDate;
+        public DateTime ExpirationDate;
+
+        public long  SportsmanId { get; set; }
+        public virtual Sportsman Sportsman { get; set; }
+
+        public long? CoachId { get; set; }
+        public virtual Coach Coach { get; set; } 
+
+        public long SwimPoolId { get; set; }
+        public virtual SwimPool SwimPool { get; set; }
 
         public override string ToString()
         {
-            return $"{PoolID}, {SportsmanID}, {CoachID}, {ClearanceDate}, {Term}";
+            return $"{ClearanceDate}, {ExpirationDate}";
         }
     }
 }

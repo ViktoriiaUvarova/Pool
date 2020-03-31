@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PoolContext.cs" />
     <Compile Include="Models\Entity.cs" />
     <Compile Include="Models\IEntity.cs" />
